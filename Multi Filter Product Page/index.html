@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Filter Product Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+</head>
+<body>
+    <header>
+        <h1 class="title"><i class="fa-solid fa-filter"></i>Multi-Checkbox Filter</h1>
+        <p>Manage dynamic arrays with JavaScript's spread operator</p>
+    </header>
+    <div class="main-container">
+        <div class="grid-container">
+            <div class="filter-box">
+                <div class="filter">
+                    <h1 class="filter-title"><i class="fa-solid fa-sliders-h"></i>Filter Products</h1>
+                    <div class="category">
+                        <h1 class="category-title"><i class="fa-solid fa-tag"></i>Category</h1>
+                        <div class="category-box">
+                            <div class="checkbox-box">
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="Electronics">
+                                        <input type="checkbox" id="Electronics" value="electronic">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Electronics</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="clothing">
+                                        <input type="checkbox" id="clothing" value="clothe">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Clothing</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="kitchen">
+                                        <input type="checkbox" id="kitchen"  value="kitchen">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Home & Kitchen</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for="books">
+                                        <input type="checkbox" id="books" value="book">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Books</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category color">
+                        <h1 class="category-title color-title"><i class="fa-solid fa-palette"></i>Color</h1>
+                        <div class="category-box color-box">
+                            <div class="checkbox-box">
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="red">
+                                        <input type="checkbox" id="red" value="red">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Red</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="blue">
+                                        <input type="checkbox" id="blue" value="blue">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Blue</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="black">
+                                        <input type="checkbox" id="black" value="black">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Black</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for="white">
+                                        <input type="checkbox" id="white" value="white">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>White</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category price">
+                        <h1 class="category-title price-title"><i class="fa-solid fa-dollar-sign"></i>Price Range</h1>
+                        <div class="category-box price-box">
+                            <div class="checkbox-box">
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="Under50">
+                                        <input type="checkbox" id="Under50" value="under50">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Under $50</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="50-100">
+                                        <input type="checkbox" id="50-100" value="50 - 100">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>$50 - $100</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox" style="margin-bottom: 1.3rem;">
+                                    <label for="100-200">
+                                        <input type="checkbox" id="100-200" value="100-200">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>$100 - $200</span>
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for="Over200">
+                                        <input type="checkbox" id="Over200" value="over200">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Over $200</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="active-filter">
+                        <h1><i class="fa-solid fa-check"></i>Active Filter</h1>
+                        <div class="active-filter-list">
+                            No filters selected
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-box">
+                <h1><i class="fa-solid fa-box-open"></i>Products <span class="totalProducts">12 Products</span></h1>
+                <div class="products">
+                    <!-- products will be added by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fontawesome/all.css">
+    <link rel="stylesheet" href="./fontawesome/fontawesome.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-shopping-cart"></i>Intractive Shopping</h1>
+        <p>Add and remove items with immutable state updates</p>
+    </header>
+    <main>
+        <h1><i class="fa-solid fa-store"></i>Products</h1>
+        <section id="products">
+            <div class="product-container"></div>
+            <div class="shopping-cart">
+                <h1><i class="fa-solid fa-shopping-basket"></i>Shopping Cart <span class="totalProduct">0</span></h1>
+                <div class="shopping-product">
+                    <div class="emptycartText" style="display:flex;flex-direction: column;text-align: center;margin-top: 2rem;">
+                        <i class="fa-solid fa-shopping-basket"></i>
+                        <span>Your cart is empty!</span>
+                        <p>Add some products to get started!d</p>
+                    </div>
+                </div>
+                <div class="total-calculation" style="display: none;">
+                    <p><span>Subtotal:</span><span class="subtotal"></span></p>
+                    <p><span>Tax(8%):</span><span class="tax">$12.00</span></p>
+                    <p><span>Shipping:</span><span class="shipping">$5.00</span></p>
+                    <h3><span>Total</span><span class="total">$1000.00</span></h3>
+                    <button class="checkout">Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>

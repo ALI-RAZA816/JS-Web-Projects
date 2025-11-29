@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./fontIcon/all.css">
+        <link rel="stylesheet" href="./fontIcon/fontawesome.css">
+        <title>Dynamic List Manager (Spread Operator)</title>
+    </head>
+    <body>
+    <div class="main-container">
+        <div class="container-header">
+            <h1>Dynamic List Merger</h1>
+            <p>Merge two lists (fruits & vegetables) using JavaScript's spread operator</p>
+        </div>
+        <div class="container-body">
+            <div class="fields-container" style="width: 100%;">
+                <div class="fruits">
+                    <div class="fruits-header">
+                        <h1>🍎Fruits</h1>
+                    </div>
+                    <div class="fruits-body">
+                        <div class="fruits-input">
+                            <input type="text" id="fruitInput" placeholder="Add fruits...">
+                            <button class="addfruitBtn" id="FruitBtn">Add</button>
+                        </div>
+                        <ul class="fruits-list-container" id="fruits-list-container"></ul>
+                    </div>
+                </div>
+                <div class="vegetables">
+                    <div class="vegetables-header">
+                        <h1>🥦Vegetables</h1>
+                    </div>
+                    <div class="vegetables-body">
+                        <div class="vegetables-input">
+                            <input type="text" id="vegetablesInput" placeholder="Add a vegetables...">
+                            <button id="vegeBtn">Add</button>
+                        </div>
+                        <ul class="vegetables-list-container" id="vegetables-list-container"></ul>
+                    </div>
+                </div>
+            </div>
+            <button class="mergeListbutton">Merge Lists</button>
+            <div class="merge-container">
+                <h1>🥗Merged List</h1>
+                <ul class="mergeList">
+                    <li class="list">No items merged yet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
